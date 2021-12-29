@@ -1,0 +1,20 @@
+.cont {
+  display: flex;
+  height: 90vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10rem;
+}
+.img-cont {
+  margin-top: 5rem;
+  display: flex;
+}
+.img1 {
+  margin-right: 15rem;
+  margin-bottom: 10rem;
+}
+.img {
+  width: 300px;
+}
+

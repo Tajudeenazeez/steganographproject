@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" 
+    integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" 
+    crossorigin="anonymous" 
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <script src="steganography.min.js"></script>
+
+  <title>Steganograph</title>
+</head>
+<body>
+  <div class="cont">
+    <div class="">  
+        <input class="ui primary button" type="file" id="img" name="img" accept="image/*" onchange="readURL(this)">
+    </div>
+    <div class="ui input">  
+      <input id="text" type="text" placeholder="entercode">
+    </div>
+      <button class="ui secondary button" onclick="hideText()">hide text inside image</button> 
+ 
+
+  <div class="img-cont">  
+    <div class="img1">
+      <h5>source image</h5>  
+      <img id="image1" src="" alt="">
+    </div>    
+    <div class="img">
+      <h5>Message encoded image</h5>
+      <img id="image2" src="" alt=""> 
+    </div>
+  </div>
+    <div class="">
+      <input type="file" id="" name="img" accept="image/*" onchange="decode(this)">
+      <h5 id="decoded">decoded text</h5>
+    </div>  
+  </div>
+  
+  <script src="index.js"></script>
+</body>
+</html>
